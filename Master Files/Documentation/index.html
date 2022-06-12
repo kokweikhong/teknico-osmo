@@ -1,0 +1,952 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Arkit - Architecture & Interior HTML Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+ 
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Arkit&rdquo; Documentation by &ldquo;DynamicLayers&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Arkit&rdquo;</h1>
+		
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created: 10/09/2019<br>
+				By: DynamicLayers<br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+	  
+      <p>The Template layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, portfolio section you can showcase your portfolio with awesome animation, team section is for your team members, testimonial section here you can published your customer reviews, contact section here you can put your contact information & footer that show copyright information.</p>
+        
+       <pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Architecture & Interior HTML Template">
+        &lt;meta name="author" content="DynamicLayers">
+       
+        &lt;title>Arkit | Architecture & Interior HTML Template&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		
+		&lt;!-- Font Awesome CSS -->
+        &lt;link rel="stylesheet" href="css/fontawesome.min.css">
+        &lt;!-- Themify Icons CSS -->
+        &lt;link rel="stylesheet" href="css/themify-icons.css">
+        &lt;!-- Elegant Line Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-line-icons.css">
+        &lt;!-- Elegant Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-font-icons.css">
+        &lt;!-- Flat Icons CSS -->
+        &lt;link rel="stylesheet" href="css/flaticon.css">
+        &lt;!-- animate CSS -->
+        &lt;link rel="stylesheet" href="css/animate.min.css">
+		&lt;!-- Bootstrap CSS -->
+        &lt;link rel="stylesheet" href="css/bootstrap.min.css">
+        &lt;!-- Slicknav CSS -->
+        &lt;link rel="stylesheet" href="css/slicknav.min.css">
+        &lt;!--Slick Slider-->
+        &lt;link rel="stylesheet" href="css/slick.css">
+        &lt;!--Slider CSS-->
+        &lt;link rel="stylesheet" href="css/slider.css">
+        &lt;!-- Venobox CSS -->
+        &lt;link rel="stylesheet" href="css/venobox/venobox.css">
+		&lt;!-- OWL-Carousel CSS -->
+        &lt;link rel="stylesheet" href="css/owl.carousel.css">
+		&lt;!-- Main CSS -->
+        &lt;link rel="stylesheet" href="css/main.css">
+		&lt;!-- Responsive CSS -->
+        &lt;link rel="stylesheet" href="css/responsive.css">
+
+        &lt;script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+    &lt;/head>
+    &lt;body data-spy="scroll" data-target="#navmenu" data-offset="70">
+        &lt;!--[if lt IE 8]>
+            &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+        &lt;![endif]-->
+        
+        &lt;div class="site-preloader-wrap">
+            &lt;div class="spinner">&lt;/div>
+        &lt;/div>&lt;!-- Preloader -->
+        
+        &lt;header id="header" class="header-section">
+            
+		&lt;/header> &lt;!--.header-section -->
+		
+        &lt;div class="header-height">&lt;/div>
+
+        &lt;div id="main-slider" class="dl-slider">
+            
+        &lt;/div>&lt;!--/.slider-section-->
+        
+        &lt;section class="about-section padding">
+            
+        &lt;/section>&lt;!--/.about-section-->
+        
+        &lt;section class="service-section bg-grey padding">
+           
+        &lt;/section>&lt;!--/.service-section-->
+        
+        &lt;section class="projects-section padding">
+            
+        &lt;/section>&lt;!--/.projects-section-->
+        
+        &lt;section class="team-section padding">
+            
+        &lt;/section>&lt;!--/.team-section-->
+        
+        &lt;section class="testimonial-section bg-grey padding">
+           
+        &lt;/section>&lt;!--/.testimonial-section-->
+        
+        &lt;section class="blog-section padding">
+            
+        &lt;/section>&lt;!--/.blog-section-->
+        
+        &lt;div class="sponsor-section bg-grey">
+           
+        &lt;/div>&lt;!--/.sponsor-section-->
+		
+        &lt;section class="widget-section padding">
+            
+        &lt;/section>&lt;!--/.widget-section-->
+        
+		&lt;footer class="footer-section align-center">
+			
+		&lt;/footer>&lt;!-- /.footer-section -->
+
+		&lt;a data-scroll href="#header" id="scroll-to-top">&lt;i class="arrow_carrot-up">&lt;/i>&lt;/a>
+	
+		&lt;!-- jQuery Lib -->
+		&lt;script src="js/vendor/jquery-1.12.4.min.js">&lt;/script>
+		&lt;!-- Bootstrap JS -->
+		&lt;script src="js/vendor/bootstrap.min.js">&lt;/script>
+		&lt;!-- Tether JS -->
+		&lt;script src="js/vendor/tether.min.js">&lt;/script>
+		&lt;!-- Slicknav JS -->
+		&lt;script src="js/vendor/jquery.slicknav.min.js">&lt;/script>
+		&lt;!-- OWL-Carousel JS -->
+		&lt;script src="js/vendor/owl.carousel.min.js">&lt;/script>
+		&lt;!-- Smooth Scroll JS -->
+		&lt;script src="js/vendor/smooth-scroll.min.js">&lt;/script>
+        &lt;!-- Venobox JS -->
+        &lt;script src="js/vendor/venobox.min.js">&lt;/script>
+		&lt;!-- Ajaxchimp JS -->
+		&lt;script src="js/vendor/jquery.ajaxchimp.min.js">&lt;/script>
+		&lt;!--Slick Slider-->
+		&lt;script src="js/vendor/slick.min.js">&lt;/script>
+		&lt;!--Counterup JS-->
+		&lt;script src="js/vendor/jquery.counterup.min.js">&lt;/script>
+		&lt;!--Waypoints JS-->
+		&lt;script src="js/vendor/jquery.waypoints.v2.0.3.min.js">&lt;/script>
+		&lt;!--YTPlayer Js-->
+		&lt;script src="js/vendor/jquery.mb.YTPlayer.min.js">&lt;/script>
+		&lt;!-- Wow JS -->
+		&lt;script src="js/vendor/wow.min.js">&lt;/script>
+        &lt;!-- Google Map JS -->
+        &lt;script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPH8h1UpcK01BdcvoZeOzq-_wJqRxN1Pc">&lt;/script>
+		&lt;!-- Main JS -->
+		&lt;script src="js/main.js">&lt;/script>
+
+    &lt;/body>
+&lt;/html>
+        </pre>
+       <hr>
+		
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+<p>You can change menu name with your needs from here...</p>
+<pre class="brush: html;">
+&lt;header id="header" class="header-section">
+	&lt;div class="container">
+		&lt;nav class="navbar ">
+			&lt;a href="index.html" class="navbar-brand">&lt;img src="img/logo-dark.png" alt="Arkit">&lt;/a>
+			&lt;div class="d-flex menu-wrap">
+			   &lt;div id="mainmenu" class="mainmenu">
+				   &lt;ul class="nav">
+					   &lt;li>&lt;a data-scroll class="nav-link active" href="index.html">Home&lt;span class="sr-only">(current)&lt;/span>&lt;/a> 
+							&lt;ul>
+							   &lt;li>&lt;a href="index.html">Home Default&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="index-2.html">Home Modern&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="index-3.html">Home Classic&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="index-4.html">Home Dark&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="index-5.html">Home Video Bg&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="#">About&lt;/a> 
+							&lt;ul>
+							   &lt;li>&lt;a href="about-us.html">About Us&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="about-company.html">About Company&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="#">Services&lt;/a> 
+							&lt;ul>
+							   &lt;li>&lt;a href="services-1.html">Services 01&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="services-2.html">Services 02&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="services-3.html">Services 03&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="#">Projects&lt;/a> 
+							&lt;ul>
+							   &lt;li>&lt;a href="projects.html">All Projects&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="project-single.html">Projects Single&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="#">Pages&lt;/a> 
+							&lt;ul>
+							   &lt;li>&lt;a href="team.html">Our Team&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="testimonial.html">Testimonial&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="404.html">404 Error&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="#">Blog&lt;/a> 
+							&lt;ul>
+							   &lt;li>&lt;a href="blog-grid.html">Blog Grid&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="blog-classic.html">Blog Classic&lt;/a>&lt;/li>
+							   &lt;li>&lt;a href="blog-single.html">Blog Single&lt;/a>&lt;/li>
+							&lt;/ul>
+						&lt;/li>
+						&lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+						&lt;li class="phone">&lt;i class="fa fa-phone">&lt;/i> (+123) 456 789 101&lt;/li>
+					&lt;/ul>
+			   &lt;/div>
+			&lt;/div>
+		&lt;/nav>
+	&lt;/div>
+&lt;/header> &lt;!--.header-section -->
+</pre>
+        
+        
+	  <hr>
+<h4 id="portfolio"><strong>2) Slider Section</strong> - <a href="#toc">top</a></h4>
+<p>You need to change images and texts in this slider.</p>
+  <br>
+<pre class="brush: html;">
+&lt;div id="main-slider" class="dl-slider">
+	&lt;div class="single-slide">
+		&lt;div class="bg-img kenburns-top-right" style="background-image: url(img/slider-1.jpg);">&lt;/div>
+		&lt;div class="overlay">&lt;/div>
+		&lt;div class="slider-content-wrap d-flex align-items-center text-left">
+			&lt;div class="container">
+				&lt;div class="slider-content">
+					&lt;div class="dl-caption medium">&lt;div class="inner-layer">&lt;div data-animation="fade-in-right" data-delay="1s">Residencial&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-caption dl-border" data-animation="fade-in-left" data-delay="0s">&lt;/div>
+					&lt;div class="dl-caption big">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="2s">Dream home might be&lt;/div>&lt;/div>
+					&lt;/div>
+					&lt;div class="dl-caption big">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="2.5s">closer than you think.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-caption small">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="3s">Business is the activity of making money.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-btn-group">
+						&lt;div class="inner-layer">
+							&lt;a href="#" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects &lt;i class="arrow_right">&lt;/i>&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>  
+	&lt;/div>&lt;!--Slide-1-->
+	&lt;div class="single-slide">
+		&lt;div class="bg-img kenburns-top-right" style="background-image: url(img/slider-2.jpg);">&lt;/div>
+		&lt;div class="overlay">&lt;/div>
+		&lt;div class="slider-content-wrap d-flex align-items-center text-left">
+			&lt;div class="container">
+				&lt;div class="slider-content">
+					&lt;div class="dl-caption medium">&lt;div class="inner-layer">&lt;div data-animation="fade-in-right" data-delay="1s">Residencial&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-caption dl-border" data-animation="fade-in-left" data-delay="4s">&lt;/div>
+					&lt;div class="dl-caption big">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="2s">Open the door to&lt;/div>&lt;/div>
+					&lt;/div>
+					&lt;div class="dl-caption big">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="2.5s">better kind of interior.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-caption small">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="3s">Business is the activity of making money.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-btn-group">
+						&lt;div class="inner-layer">
+							&lt;a href="#" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects &lt;i class="arrow_right">&lt;/i>&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>  
+	&lt;/div>&lt;!--Slide-2-->
+	&lt;div class="single-slide">
+		&lt;div class="bg-img kenburns-top-right" style="background-image: url(img/slider-3.jpg);">&lt;/div>
+		&lt;div class="overlay">&lt;/div>
+		&lt;div class="slider-content-wrap d-flex align-items-center text-left">
+			&lt;div class="container">
+				&lt;div class="slider-content">
+					&lt;div class="dl-caption medium">&lt;div class="inner-layer">&lt;div data-animation="fade-in-right" data-delay="1s">Residencial&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-caption dl-border" data-animation="fade-in-left" data-delay="0s">&lt;/div>
+					&lt;div class="dl-caption big">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="2s">Dream home might be&lt;/div>&lt;/div>
+					&lt;/div>
+					&lt;div class="dl-caption big">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="2.5s">closer than you think.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-caption small">&lt;div class="inner-layer">&lt;div data-animation="fade-in-left" data-delay="3s">Business is the activity of making money.&lt;/div>&lt;/div>&lt;/div>
+					&lt;div class="dl-btn-group">
+						&lt;div class="inner-layer">
+							&lt;a href="#" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects &lt;i class="arrow_right">&lt;/i>&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>  
+	&lt;/div>&lt;!--Slide-3-->
+&lt;/div>&lt;!--/.slider-section-->
+</pre> 
+       
+<hr>
+
+<h4 id="portfolio"><strong>3) About Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="about-section padding">
+	&lt;div class="container">
+		&lt;div class="row about-wrap d-flex align-items-center">
+			&lt;div class="col-md-6 xs-padding">
+				&lt;div class="about-content">
+					&lt;h2>Creating place that enhance &lt;br> the human experience.&lt;/h2>
+					&lt;p>Arkit is a different kind of architecture practice. Founded by LoganCee in 1991, we’re an employee-owned firm pursuing a democratic design process that values everyone’s input.&lt;/p>
+					&lt;p>Today we have more than 150 people in London, Hong Kong and Sydney providing architecture, interior and urban design services from concept to completion.&lt;/p>
+					&lt;a href="#" class="default-btn">More About Us&lt;/a>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-6 xs-padding">
+				&lt;div class="about-bg">
+					&lt;div class="about-bg">&lt;/div>
+					&lt;div class="dots">&lt;/div>
+					&lt;div class="year-text">
+					   &lt;div class="year-content">
+							&lt;h2>10&lt;/h2>
+							&lt;span>Years of experience&lt;/span>
+					   &lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.about-section-->
+</pre>
+
+<br>
+<hr>
+
+<h4 id="portfolio"><strong>4) Services Section </strong> - <a href="#toc">top</a></h4>
+		
+  <br>
+<pre class="brush: html;">
+&lt;section class="service-section bg-grey padding">
+   &lt;div class="dots">&lt;/div>
+	&lt;div class="container">
+		&lt;div class="section-heading text-center mb-40">
+		   &lt;span>Services&lt;/span>
+		   &lt;h2>Our speciallization&lt;/h2>
+		&lt;/div>&lt;!--/.section-heading-->
+		&lt;div class="service-wrap row">
+			&lt;div class="col-lg-4 col-sm-6 padding-15">
+				&lt;div class="service-item">
+					&lt;div class="service-thumb">
+						&lt;img src="img/service-1.jpg" alt="thumb">
+					&lt;/div>
+					&lt;div class="service-content">
+						&lt;i class="m-flaticon-refinery">&lt;/i>
+						&lt;h3>Architecture&lt;/h3>
+						&lt;p>We offer a fully integrated service that complements the architectural concept, we ensure all projects.&lt;/p>
+						&lt;a href="#">View Projects&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>&lt;!--Item 1-->
+			&lt;div class="col-lg-4 col-sm-6 padding-15">
+				&lt;div class="service-item">
+					&lt;div class="service-thumb">
+						&lt;img src="img/service-2.jpg" alt="thumb">
+					&lt;/div>
+					&lt;div class="service-content">
+						&lt;i class="m-flaticon-industrial-robot-1">&lt;/i>
+						&lt;h3>Interior Design&lt;/h3>
+						&lt;p>We offer a fully integrated service that complements the architectural concept, we ensure all projects.&lt;/p>
+						&lt;a href="#">View Projects&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>&lt;!--Item 3-->
+			&lt;div class="col-lg-4 col-sm-6 padding-15">
+				&lt;div class="service-item">
+					&lt;div class="service-thumb">
+						&lt;img src="img/service-3.jpg" alt="thumb">
+					&lt;/div>
+					&lt;div class="service-content">
+						&lt;i class="m-flaticon-factory">&lt;/i>
+						&lt;h3>Commercial Design&lt;/h3>
+						&lt;p>We offer a fully integrated service that complements the architectural concept, we ensure all projects.&lt;/p>
+						&lt;a href="#">View Projects&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>&lt;!--Item 3-->
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.service-section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) Projects Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="projects-section padding">
+	&lt;div class="container-fluid">
+		&lt;div class="section-heading text-center mb-40">
+		   &lt;span>Projects&lt;/span>
+		   &lt;h2>Latest works&lt;/h2>
+		&lt;/div>&lt;!--/.section-heading-->
+		&lt;div id="projects-carousel" class="projects-carousel owl-carousel">
+			&lt;div class="project-item">
+				&lt;img src="img/project-1.jpg" alt="projects">
+				&lt;div class="overlay">&lt;/div>
+				&lt;a href="img/project-1.jpg" class="view-icon img-popup" data-gall="myGallery"> &lt;i class="fas fa-expand">&lt;/i>&lt;/a>
+				&lt;div class="projects-content">
+					&lt;a href="projects.html" class="category">Interior&lt;/a>
+					&lt;h3>&lt;a href="project-single.html" class="tittle">Rectangular house near italy&lt;/a>&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="project-item">
+				&lt;img src="img/project-2.jpg" alt="projects">
+				&lt;div class="overlay">&lt;/div>
+				&lt;a href="img/project-2.jpg" class="view-icon img-popup" data-gall="myGallery"> &lt;i class="fas fa-expand">&lt;/i>&lt;/a>
+				&lt;div class="projects-content">
+					&lt;a href="projects.html" class="category">Architecture&lt;/a>
+					&lt;h3>&lt;a href="project-single.html" class="tittle">Cathedral of brasilia brasilia&lt;/a>&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="project-item">
+				&lt;img src="img/project-3.jpg" alt="projects">
+				&lt;div class="overlay">&lt;/div>
+				&lt;a href="img/project-3.jpg" class="view-icon img-popup" data-gall="myGallery"> &lt;i class="fas fa-expand">&lt;/i>&lt;/a>
+				&lt;div class="projects-content">
+					&lt;a href="projects.html" class="category">Design&lt;/a>
+					&lt;h3>&lt;a href="project-single.html" class="tittle">Harpa concert hall reykjavik&lt;/a>&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="project-item">
+				&lt;img src="img/project-4.jpg" alt="projects">
+				&lt;div class="overlay">&lt;/div>
+				&lt;a href="img/project-4.jpg" class="view-icon img-popup" data-gall="myGallery"> &lt;i class="fas fa-expand">&lt;/i>&lt;/a>
+				&lt;div class="projects-content">
+					&lt;a href="projects.html" class="category">Architecture&lt;/a>
+					&lt;h3>&lt;a href="project-single.html" class="tittle">Milwauke museum wisconsin&lt;/a>&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="project-item">
+				&lt;img src="img/project-5.jpg" alt="projects">
+				&lt;div class="overlay">&lt;/div>
+				&lt;a href="img/project-5.jpg" class="view-icon img-popup" data-gall="myGallery"> &lt;i class="fas fa-expand">&lt;/i>&lt;/a>
+				&lt;div class="projects-content">
+					&lt;a href="projects.html" class="category">Design&lt;/a>
+					&lt;h3>&lt;a href="project-single.html" class="tittle">The dancing house prague&lt;/a>&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.projects-section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>6) Team Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html; ">
+&lt;section class="team-section padding">
+	&lt;div class="container">
+		&lt;div class="section-heading text-center mb-40">
+		   &lt;span>Team&lt;/span>
+		   &lt;h2>Speciallized team&lt;/h2>
+		&lt;/div>&lt;!--/.section-heading-->
+		&lt;div class="row team-wrap">
+			&lt;div class="col-lg-3 col-sm-6 padding-15">
+				&lt;div class="team-item">
+				   &lt;div class="overlay">&lt;/div>
+					&lt;img src="img/team-1.jpg" alt="team">
+					&lt;div class="team-content">
+						&lt;h3>Jhon Castellon&lt;/h3>
+						&lt;span>Architect&lt;/span>
+					&lt;/div>
+					&lt;ul class="team-social">
+						&lt;li>&lt;a href="#">&lt;i class="ti-facebook">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-twitter">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-instagram">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-youtube">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 padding-15">
+				&lt;div class="team-item">
+				   &lt;div class="overlay">&lt;/div>
+					&lt;img src="img/team-2.jpg" alt="team">
+					&lt;div class="team-content">
+						&lt;h3>José Carpio&lt;/h3>
+						&lt;span>Designer&lt;/span>
+					&lt;/div>
+					&lt;ul class="team-social">
+						&lt;li>&lt;a href="#">&lt;i class="ti-facebook">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-twitter">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-instagram">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-youtube">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 padding-15">
+				&lt;div class="team-item">
+				   &lt;div class="overlay">&lt;/div>
+					&lt;img src="img/team-3.jpg" alt="team">
+					&lt;div class="team-content">
+						&lt;h3>Valentin Lacoste&lt;/h3>
+						&lt;span>Developer&lt;/span>
+					&lt;/div>
+					&lt;ul class="team-social">
+						&lt;li>&lt;a href="#">&lt;i class="ti-facebook">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-twitter">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-instagram">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-youtube">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 padding-15">
+				&lt;div class="team-item">
+				   &lt;div class="overlay">&lt;/div>
+					&lt;img src="img/team-4.jpg" alt="team">
+					&lt;div class="team-content">
+						&lt;h3>Kyle Frederick&lt;/h3>
+						&lt;span>Marketer&lt;/span>
+					&lt;/div>
+					&lt;ul class="team-social">
+						&lt;li>&lt;a href="#">&lt;i class="ti-facebook">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-twitter">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-instagram">&lt;/i>&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">&lt;i class="ti-youtube">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.team-section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>7) Testimonials Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="testimonial-section bg-grey padding">
+   &lt;div class="dots">&lt;/div>
+	&lt;div class="container">
+		&lt;div class="section-heading text-center mb-40">
+		   &lt;span>Testimonial&lt;/span>
+		   &lt;h2>What people says&lt;/h2>
+		&lt;/div>&lt;!--/.section-heading-->
+		&lt;div id="testimonial-carousel" class="testimonial-carousel owl-carousel">
+			&lt;div class="testi-item d-flex align-items-center">
+				&lt;img src="img/testi-1.jpg" alt="img">
+				&lt;div class="testi-content">
+					&lt;p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"&lt;/p>
+					&lt;h3>Kyle Frederick&lt;/h3>
+					&lt;ul class="rattings">
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+					&lt;/ul>
+					&lt;span>Director&lt;/span>
+				&lt;/div>
+				&lt;i class="fa fa-quote-right">&lt;/i>
+			&lt;/div>
+			&lt;div class="testi-item d-flex align-items-center">
+				&lt;img src="img/testi-2.jpg" alt="img">
+				&lt;div class="testi-content">
+					&lt;p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"&lt;/p>
+					&lt;h3>Valentin Lacoste&lt;/h3>
+					&lt;ul class="rattings">
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+					&lt;/ul>
+					&lt;span>Director&lt;/span>
+				&lt;/div>
+				&lt;i class="fa fa-quote-right">&lt;/i>
+			&lt;/div>
+			&lt;div class="testi-item d-flex align-items-center">
+				&lt;img src="img/testi-3.jpg" alt="img">
+				&lt;div class="testi-content">
+					&lt;p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"&lt;/p>
+					&lt;h3>José Carpio&lt;/h3>
+					&lt;ul class="rattings">
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+						&lt;li>&lt;i class="fa fa-star">&lt;/i>&lt;/li>
+					&lt;/ul>
+					&lt;span>Director&lt;/span>
+				&lt;/div>
+				&lt;i class="fa fa-quote-right">&lt;/i>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.testimonial-section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>8) Blog Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="blog-section padding">
+	&lt;div class="container">
+	   &lt;div class="section-heading text-center mb-40">
+		   &lt;span>From Blog&lt;/span>
+		   &lt;h2>Speciallized news&lt;/h2>
+		&lt;/div>&lt;!--/.section-heading-->
+		&lt;div class="row blog-wrap">
+			&lt;div class="col-lg-4 col-sm-6 sm-padding">
+				&lt;div class="blog-item">
+					&lt;div class="blog-thumb">
+						&lt;img src="img/post-1.jpg" alt="post">
+						&lt;span class="category">&lt;a href="#">interior&lt;/a>&lt;/span>
+					&lt;/div>
+					&lt;div class="blog-content">
+						&lt;h3>&lt;a href="#">Minimalist trending in modern architecture 2019&lt;/a>&lt;/h3>
+						&lt;p>Building first evolved out dynamics between needs means available building materials attendant skills.&lt;/p>
+						&lt;a href="#" class="read-more">Read More&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-4 col-sm-6 sm-padding">
+				&lt;div class="blog-item">
+					&lt;div class="blog-thumb">
+						&lt;img src="img/post-2.jpg" alt="post">
+						&lt;span class="category">&lt;a href="#">Architecture&lt;/a>&lt;/span>
+					&lt;/div>
+					&lt;div class="blog-content">
+					   &lt;h3>&lt;a href="#">Terrace in the town yamazaki kentaro design workshop.&lt;/a>&lt;/h3>
+						&lt;p>Building first evolved out dynamics between needs means available building materials attendant skills.&lt;/p>
+						&lt;a href="#" class="read-more">Read More&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-4 col-sm-6 sm-padding">
+				&lt;div class="blog-item">
+					&lt;div class="blog-thumb">
+						&lt;img src="img/post-3.jpg" alt="post">
+						&lt;span class="category">&lt;a href="#">Design&lt;/a>&lt;/span>
+					&lt;/div>
+					&lt;div class="blog-content">
+						&lt;h3>&lt;a href="#">W270 house são paulo arquitetos fabio jorge architeqture.&lt;/a>&lt;/h3>
+						&lt;p>Building first evolved out dynamics between needs means available building materials attendant skills.&lt;/p>
+						&lt;a href="#" class="read-more">Read More&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.blog-section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>9) Sponsor Section</strong> - <a href="#toc">top</a></h4>
+	
+  <br>
+<pre class="brush: html;">
+&lt;div class="sponsor-section bg-grey">
+   &lt;div class="dots">&lt;/div>
+	&lt;div class="container">
+		&lt;div id="sponsor-carousel" class="sponsor-carousel owl-carousel">
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor1.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor2.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor3.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor4.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor5.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor6.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor7.png" alt="sponsor">
+			&lt;/div>
+			&lt;div class="sponsor-item">
+				&lt;img src="img/sponsor8.png" alt="sponsor">
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>&lt;!--/.sponsor-section-->
+</pre>
+<hr />
+
+<h4 id="portfolio"><strong>10) Widget Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="widget-section padding">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-lg-3 col-sm-6 sm-padding">
+				&lt;div class="widget-content">
+					&lt;a href="#">&lt;img src="img/logo-dark.png" alt="brand">&lt;/a>
+					&lt;p>Building your own home is about desire, fantasy. But it’s achievable anyone can do it.&lt;/p>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-2 col-sm-6 sm-padding">
+				&lt;div class="widget-content">
+					&lt;h4>Company&lt;/h4>
+					&lt;ul class="widget-links">
+						&lt;li>&lt;a href="#">About Us&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">Our Services&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">Clients Reviews&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#">Contact Us&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-3 col-sm-6 sm-padding">
+				&lt;div class="widget-content">
+					&lt;h4>Headquaters&lt;/h4>
+					&lt;p>962 Fifth Avenue, 3rd Floor New York, NY10022&lt;/p>
+					&lt;span>Hello@dynamiclayers.net&lt;/span>
+					&lt;span>(+123) 456 789 101&lt;/span>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-4 col-sm-6 sm-padding">
+				&lt;div class="widget-content">
+					&lt;h4>Newslatter Subscription&lt;/h4>
+					&lt;p>Subscribe and get 10% off from our &lt;br>architecture company.&lt;/p>
+					&lt;div class="subscribe-box clearfix">
+						&lt;div class="subscribe-form-wrap">
+							&lt;form action="#" class="subscribe-form">
+								&lt;input type="email" name="email" id="subs-email" class="form-input" placeholder="Enter Your Email Address...">
+								&lt;button type="submit" class="submit-btn">Subscribe&lt;/button>
+								&lt;div id="subscribe-result">
+									&lt;p class="subscription-success">&lt;/p>
+									&lt;p class="subscription-error">&lt;/p>
+								&lt;/div>
+							&lt;/form>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--/.widget-section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>11) Footer Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer-section align-center">
+	&lt;div class="container">
+		&lt;p>&copy; 2019 Arkit Powered by DynamicLayers&lt;/p>
+	&lt;/div>
+&lt;/footer>&lt;!-- /.footer-section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>12) Configure Contact Form</strong> - <a href="#toc">top</a></h4>
+<p>Just change subject line and recipient email address from contact.php file.</p>
+  <br>
+<pre class="brush: php;">
+// Only process POST reqeusts.
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	// Get the form fields and remove whitespace.
+	$name = strip_tags(trim($_POST["name"]));
+	$name = str_replace(array("\r","\n"),array(" "," "),$name);
+	$email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+	$message = trim($_POST["message"]);
+
+	// Check that data was sent to the mailer.
+	if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		// Set a 400 (bad request) response code and exit.
+		http_response_code(400);
+		echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+		exit;
+	}
+
+	// Update this to your desired email address.
+	$recipient = "contact@yourdomain.com";
+	$subject = "Message from $name";
+
+	// Email content.
+	$email_content = "Name: $name\n";
+	$email_content .= "Email: $email\n\n";
+	$email_content .= "Subject: $subject\n\n";
+	$email_content .= "Message: $message\n";
+
+	// Email headers.
+	$email_headers = "From: $name <$email>\r\nReply-to: <$email>";
+
+	// Send the email.
+	if (mail($recipient, $subject, $email_content, $email_headers)) {
+		// Set a 200 (okay) response code.
+		http_response_code(200);
+		echo "Thank You! Your message has been sent.";
+	} else {
+		// Set a 500 (internal server error) response code.
+		http_response_code(500);
+		echo "Oops! Something went wrong and we couldn't send your message.";
+	}
+
+} else {
+	// Not a POST request, set a 403 (forbidden) response code.
+	http_response_code(403);
+	echo "There was a problem with your submission, please try again.";
+}
+</pre>
+
+<br>
+
+<hr />
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li> 
+			<li>font-awesome.min.css</li>
+			<li>themify-icons.css</li>
+			<li>elegant-font-icons.css</li>
+			<li>elegant-line-icons.css</li>
+			<li>venobox.css</li>
+			<li>slicknav.min.css</li>
+			<li>animate.min.css</li>
+			<li>owl.carousel.css</li>
+			<li>main.css</li>
+	        <li>responsive.css</li>
+	  </ol>
+
+	  
+<p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jquery-1.12.4.min.js</li>
+		  <li>bootstrap.min.js</li>
+		  <li>tether.min.js</li>
+		  <li>jquery.slicknav.min.js</li>
+		  <li>owl.carousel.min.js</li>
+		  <li>smooth-scroll.min.js</li>
+		  <li>venobox.min.js</li>
+		  <li>jquery.ajaxchimp.min.js</li>
+		  <li>wow.min.js</li>
+		  <li>main.js</li>
+	  </ol>
+		
+<hr>
+		
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 4</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+			<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+			<li><a href="https://owlcarousel2.github.io/OwlCarousel2/index.html" target="_blank">Owl Carousel</a></li>
+			<li><a href="https://slicknav.io/" target="_blank">Slicknav</a></li>
+			<li><a href="https://github.com/scdoshi/jquery-ajaxchimp" target="_blank">Ajaxchimp</a></li>
+		</ol>
+	    <p>
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+	  <p class="append-bottom alt large"><strong>DynamicLayers</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>
