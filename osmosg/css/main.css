@@ -893,13 +893,21 @@ ul.nav > li > a.active{
     z-index: -1;
 }
 .service-wrap{}
+.service-wrap .col-lg-4{
+    min-height: 100%;
+}
 .service-item{
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 .service-thumb{
     overflow: hidden;
     z-index: -1;
+}
+.service-thumb img {
+    height: 250px;
+    width: 350px;
 }
 .service-item:hover{
     cursor: pointer;
@@ -997,9 +1005,17 @@ ul.nav > li > a.active{
     position: relative;
     overflow: hidden;
     z-index: 1;
+    height: 400px;
+    width: 100%;
+    /* width: 360px; */
+}
+.project-item > img {
+    height: 100%;
+    width: 100%;
 }
 .project-item .overlay{
-    background-color: rgba(192,202,2,0.9);
+    background-color: rgba(0, 150, 62, 0.75);
+    /* background-color: rgba(192,202,2,0.9); */
     content: "";
     position: absolute;
     width: 100%;
@@ -1634,6 +1650,8 @@ ul.nav > li > a.active{
 .blog-wrap{}
 .blog-item{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #f9fafa;
+    height: 100%;
 }
 .blog-item .blog-thumb{
     position: relative;
@@ -2197,6 +2215,8 @@ blockquote span{
 .sponsor-item{}
 .sponsor-item img{
     opacity: 0.5;
+    height: 83px;
+    width: 187px;
 }
 .sponsor-item:hover img{
     opacity: 1;
