@@ -2826,11 +2826,22 @@ blockquote span {
     color: #263a4f;
 }
 
-.fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start {
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
     color: var(--main-color);
 }
 
-/* .fc .fc-button-group > .fc-button {
-    background-color: var(--main-color);
-    border: none;
-} */
+/* ==========================================================================
+   Tidio Chat
+   ========================================================================== */
+#tidio-chat-iframe {
+    margin-bottom: 5em !important;
+    right: 25px !important;
+}
+
+@media only screen and (max-width: 980px) {
+    #tidio-chat-iframe {
+        bottom: 100px !important;
+        margin-bottom: 0em !important;
+    }
+}
